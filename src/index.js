@@ -1,4 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Greeting, User } from "./Greeting";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<h1>Hola mundo ay :v</h1>);
+
+root.render(
+  <>
+    <Greeting />
+    <User />
+  </>
+);
