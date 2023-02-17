@@ -1,20 +1,7 @@
-export function Greeting() {
-  const miNombre = "Mi nombre";
-  const miObjeto = {
-    primerNombre: "Eder",
-    segundoNombre: "Nexón",
-  };
-
-  function sumar(x, y) {
-    return x + y;
-  }
-
+export function Greeting(props) {
   return (
     <h1>
-      <p>Hola mundo soy {miNombre}</p>
-      <p>{JSON.stringify(miObjeto)}</p>
-      <p>{miObjeto.primerNombre}</p>
-      <p>{sumar(20, 30)}</p>
+      <p>{props.title} de name</p>
     </h1>
   );
 }
